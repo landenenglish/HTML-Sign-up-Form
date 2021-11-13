@@ -12,23 +12,100 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form method="GET"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Your Last Name</label>
             </div>
             <!-- TODO: Make fieldset and legend -->
+            <fieldset>
+                <legend>Your Vacation Destination</legend>
+                <div>
+                    <label for="destination">Country</label>
+                    <select id="destination" name="destination">
+                        <option value="">Select a Country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="China">China</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="South Africa">South Africa</option>
+                    </select>
             <!-- Todo: Email Input -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
             <!-- Todo: Street Address Input -->
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="street">
             <!-- Todo: City, State, and Zip Inputs -->
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="zip">
+
+
 
             <!-- TODO: Second fieldset -->
+            <fieldset>
+                <legend>Your Vacation Preferences</legend>
+                <div>
+                    <label for="vacationtype">Type of Vacation</label>
+                    <select id="vacationtype" name="vacationtype">
+                        <option value="">Select a Vacation Type</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Family">Family</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Cruise">Cruise</option>
+                        <option value="Honeymoon">Honeymoon</option>
+                        <option value="Business">Business</option>
+                        <option value="Relaxation">Relaxation</option>
+                        <option value="Romantic">Romantic</option>
+                        <option value="Wildlife">Wildlife</option>
+                        <option value="Historical">Historical</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Food">Food</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Nightlife">Nightlife</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Skiing">Skiing</option>
+                        <option value="Snowboarding">Snowboarding</option>
+                        <option value="Surfing">Surfing</option>
+                        <option value="Water Sports">Water Sports</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="vacationlength">Length of Vacation</label>
+                    <select id="vacationlength" name="vacationlength">
+                        <option value="">Select a Vacation Length</option>
             <!-- TODO: Radio buttons for selecting preferred destination -->
+            <label for="length">Length of Vacation</label>
+            <input type="radio" id="length" name="length" value="3">3 Days
+            <input type="radio" id="length" name="length" value="5">5 Days
+            <input type="radio" id="length" name="length" value="7">7 Days
+            <input type="radio" id="length" name="length" value="10">10 Days
+            <input type="radio" id="length" name="length" value="14">14 Days
             <!-- TODO: Color input for selecting favorite color -->
+            <label for="color">Favorite Color</label>
+            <input type="color" id="color" name="color">
             <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
+            <label for="add-ons">Extra Add-Ons</label>
+            <input type="checkbox" id="add-ons" name="add-ons" value="Bike">Bike
+            <input type="checkbox" id="add-ons" name="add-ons" value="Ski">Ski
+            <input type="checkbox" id="add-ons" name="add-ons" value="Snowboard">Snowboard
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Submit">
         </form>
     </main>
     <footer>
